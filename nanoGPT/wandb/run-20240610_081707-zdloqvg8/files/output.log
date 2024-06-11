@@ -1,0 +1,39 @@
+step 0: train loss 4.2874, val loss 4.2823
+iter 0: loss 4.2675, time 75916.31ms, mfu -100.00%
+iter 10: loss 3.2466, time 564.62ms, mfu 0.66%
+iter 20: loss 2.7844, time 568.97ms, mfu 0.66%
+iter 30: loss 2.6368, time 569.11ms, mfu 0.66%
+iter 40: loss 2.5755, time 581.01ms, mfu 0.66%
+iter 50: loss 2.5297, time 567.15ms, mfu 0.66%
+iter 60: loss 2.5132, time 585.16ms, mfu 0.66%
+iter 70: loss 2.4929, time 571.49ms, mfu 0.65%
+iter 80: loss 2.4955, time 572.43ms, mfu 0.65%
+iter 90: loss 2.4674, time 580.76ms, mfu 0.65%
+iter 100: loss 2.4571, time 575.87ms, mfu 0.65%
+iter 110: loss 2.4579, time 579.59ms, mfu 0.65%
+iter 120: loss 2.4271, time 379.83ms, mfu 0.68%
+iter 130: loss 2.4118, time 580.43ms, mfu 0.68%
+iter 140: loss 2.4001, time 573.43ms, mfu 0.68%
+iter 150: loss 2.4118, time 569.30ms, mfu 0.67%
+iter 160: loss 2.3773, time 580.98ms, mfu 0.67%
+iter 170: loss 2.3482, time 573.91ms, mfu 0.67%
+iter 180: loss 2.3112, time 565.51ms, mfu 0.67%
+iter 190: loss 2.2463, time 582.12ms, mfu 0.67%
+iter 200: loss 2.2079, time 577.76ms, mfu 0.66%
+iter 210: loss 2.1371, time 572.94ms, mfu 0.66%
+iter 220: loss 2.1307, time 582.35ms, mfu 0.66%
+iter 230: loss 2.0705, time 582.09ms, mfu 0.66%
+iter 240: loss 2.0725, time 578.98ms, mfu 0.66%
+step 250: train loss 1.9622, val loss 2.0657
+saving checkpoint to out-shakespeare-char
+iter 250: loss 2.0318, time 78627.10ms, mfu 0.59%
+Traceback (most recent call last):
+  File "/home/brett/Desktop/tutorials/grokking/nanoGPT/train.py", line 333, in <module>
+    scaler.scale(loss).backward()
+  File "/home/brett/anaconda3/envs/grok2/lib/python3.9/site-packages/torch/_tensor.py", line 525, in backward
+    torch.autograd.backward(
+  File "/home/brett/anaconda3/envs/grok2/lib/python3.9/site-packages/torch/autograd/__init__.py", line 267, in backward
+    _engine_run_backward(
+  File "/home/brett/anaconda3/envs/grok2/lib/python3.9/site-packages/torch/autograd/graph.py", line 744, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

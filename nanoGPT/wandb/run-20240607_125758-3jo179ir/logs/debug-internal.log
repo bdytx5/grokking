@@ -1,0 +1,599 @@
+2024-06-07 12:57:58,321 INFO    StreamThr :101651 [internal.py:wandb_internal():86] W&B internal server running at pid: 101651, started at: 2024-06-07 12:57:58.320742
+2024-06-07 12:57:58,323 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status
+2024-06-07 12:57:58,324 INFO    WriterThread:101651 [datastore.py:open_for_write():87] open: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/run-3jo179ir.wandb
+2024-06-07 12:57:58,324 DEBUG   SenderThread:101651 [sender.py:send():378] send: header
+2024-06-07 12:57:58,327 DEBUG   SenderThread:101651 [sender.py:send():378] send: run
+2024-06-07 12:57:58,573 INFO    SenderThread:101651 [dir_watcher.py:__init__():211] watching files in: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files
+2024-06-07 12:57:58,573 INFO    SenderThread:101651 [sender.py:_start_run_threads():1099] run started: 3jo179ir with start time 1717783078.320704
+2024-06-07 12:57:58,580 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: check_version
+2024-06-07 12:57:58,581 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: check_version
+2024-06-07 12:57:58,704 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: run_start
+2024-06-07 12:57:58,731 DEBUG   HandlerThread:101651 [system_info.py:__init__():26] System info init
+2024-06-07 12:57:58,731 DEBUG   HandlerThread:101651 [system_info.py:__init__():41] System info init done
+2024-06-07 12:57:58,731 INFO    HandlerThread:101651 [system_monitor.py:start():194] Starting system monitor
+2024-06-07 12:57:58,731 INFO    SystemMonitor:101651 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-07 12:57:58,731 INFO    HandlerThread:101651 [system_monitor.py:probe():214] Collecting system info
+2024-06-07 12:57:58,732 INFO    SystemMonitor:101651 [interfaces.py:start():190] Started cpu monitoring
+2024-06-07 12:57:58,733 INFO    SystemMonitor:101651 [interfaces.py:start():190] Started disk monitoring
+2024-06-07 12:57:58,733 INFO    SystemMonitor:101651 [interfaces.py:start():190] Started gpu monitoring
+2024-06-07 12:57:58,734 INFO    SystemMonitor:101651 [interfaces.py:start():190] Started memory monitoring
+2024-06-07 12:57:58,734 INFO    SystemMonitor:101651 [interfaces.py:start():190] Started network monitoring
+2024-06-07 12:57:58,753 DEBUG   HandlerThread:101651 [system_info.py:probe():150] Probing system
+2024-06-07 12:57:58,755 DEBUG   HandlerThread:101651 [system_info.py:_probe_git():135] Probing git
+2024-06-07 12:57:58,760 DEBUG   HandlerThread:101651 [system_info.py:_probe_git():143] Probing git done
+2024-06-07 12:57:58,760 DEBUG   HandlerThread:101651 [system_info.py:probe():198] Probing system done
+2024-06-07 12:57:58,760 DEBUG   HandlerThread:101651 [system_monitor.py:probe():223] {'os': 'Linux-5.15.0-107-generic-x86_64-with-glibc2.31', 'python': '3.10.12', 'heartbeatAt': '2024-06-07T17:57:58.753719', 'startedAt': '2024-06-07T17:57:58.317133', 'docker': None, 'cuda': None, 'args': ('config/train_shakespeare_char.py',), 'state': 'running', 'program': '/home/brett/Desktop/tutorials/grokking/nanoGPT/train.py', 'codePathLocal': 'train.py', 'codePath': 'train.py', 'git': {'remote': 'https://github.com/karpathy/nanoGPT.git', 'commit': '9755682b981a45507f6eb9b11eadef8cb83cebd5'}, 'email': 'bdytx5@mail.missouri.edu', 'root': '/home/brett/Desktop/tutorials/grokking/nanoGPT', 'host': 'brett', 'username': 'brett', 'executable': '/home/brett/anaconda3/envs/py310/bin/python', 'cpu_count': 4, 'cpu_count_logical': 4, 'cpu_freq': {'current': 3599.3949999999995, 'min': 800.0, 'max': 3800.0}, 'cpu_freq_per_core': [{'current': 3614.0, 'min': 800.0, 'max': 3800.0}, {'current': 3400.0, 'min': 800.0, 'max': 3800.0}, {'current': 3400.0, 'min': 800.0, 'max': 3800.0}, {'current': 3710.656, 'min': 800.0, 'max': 3800.0}], 'disk': {'/': {'total': 456.8854446411133, 'used': 398.46733474731445}}, 'gpu': 'NVIDIA GeForce GTX 1080 Ti', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce GTX 1080 Ti', 'memory_total': 11811160064}], 'memory': {'total': 31.283340454101562}}
+2024-06-07 12:57:58,760 INFO    HandlerThread:101651 [system_monitor.py:probe():224] Finished collecting system info
+2024-06-07 12:57:58,760 INFO    HandlerThread:101651 [system_monitor.py:probe():227] Publishing system info
+2024-06-07 12:57:58,760 DEBUG   HandlerThread:101651 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2024-06-07 12:57:59,574 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_created():271] file/dir created: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/conda-environment.yaml
+2024-06-07 12:58:13,103 DEBUG   HandlerThread:101651 [system_info.py:_save_conda():219] Saving conda packages done
+2024-06-07 12:58:13,104 INFO    HandlerThread:101651 [system_monitor.py:probe():229] Finished publishing system info
+2024-06-07 12:58:13,107 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 12:58:13,107 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-07 12:58:13,107 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 12:58:13,107 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-07 12:58:13,108 DEBUG   SenderThread:101651 [sender.py:send():378] send: files
+2024-06-07 12:58:13,108 INFO    SenderThread:101651 [sender.py:_save_file():1365] saving file wandb-metadata.json with policy now
+2024-06-07 12:58:13,320 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: python_packages
+2024-06-07 12:58:13,321 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 12:58:13,321 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: python_packages
+2024-06-07 12:58:13,322 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 12:58:13,323 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 12:58:13,371 DEBUG   SenderThread:101651 [sender.py:send():378] send: telemetry
+2024-06-07 12:58:13,435 INFO    wandb-upload_0:101651 [upload_job.py:push():131] Uploaded file /tmp/tmpat365uogwandb/24dymotq-wandb-metadata.json
+2024-06-07 12:58:13,576 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/conda-environment.yaml
+2024-06-07 12:58:13,576 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_created():271] file/dir created: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/requirements.txt
+2024-06-07 12:58:13,576 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_created():271] file/dir created: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/wandb-metadata.json
+2024-06-07 12:58:14,371 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 12:58:19,372 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 12:58:24,372 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 12:58:28,321 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 12:58:28,321 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 12:58:28,364 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 12:58:29,420 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 12:58:29,579 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/config.yaml
+2024-06-07 12:58:34,478 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 12:58:39,479 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 12:58:43,321 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 12:58:43,321 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 12:58:43,368 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 12:58:45,399 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 12:58:50,400 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 12:58:55,401 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 12:58:58,321 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 12:58:58,321 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 12:58:58,364 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 12:58:58,735 DEBUG   SystemMonitor:101651 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-07 12:58:58,735 DEBUG   SenderThread:101651 [sender.py:send():378] send: stats
+2024-06-07 12:59:00,736 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 12:59:05,737 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 12:59:10,738 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 12:59:13,321 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 12:59:13,321 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 12:59:13,364 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 12:59:16,470 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 12:59:21,470 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 12:59:26,471 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 12:59:28,321 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 12:59:28,321 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 12:59:28,364 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 12:59:28,736 DEBUG   SenderThread:101651 [sender.py:send():378] send: stats
+2024-06-07 12:59:31,737 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 12:59:36,737 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 12:59:41,739 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 12:59:43,321 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 12:59:43,322 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 12:59:43,364 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 12:59:47,454 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 12:59:52,455 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 12:59:57,455 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 12:59:58,321 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 12:59:58,322 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 12:59:58,364 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 12:59:58,736 DEBUG   SenderThread:101651 [sender.py:send():378] send: stats
+2024-06-07 13:00:02,737 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:00:07,738 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:00:12,739 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:00:13,321 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 13:00:13,322 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 13:00:13,364 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 13:00:16,534 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-07 13:00:16,535 DEBUG   SenderThread:101651 [sender.py:send():378] send: history
+2024-06-07 13:00:16,535 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 13:00:16,536 INFO    SenderThread:101651 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-06-07 13:00:16,601 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_created():271] file/dir created: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/wandb-summary.json
+2024-06-07 13:00:16,602 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_created():271] file/dir created: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/output.log
+2024-06-07 13:00:17,783 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:00:18,602 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/output.log
+2024-06-07 13:00:22,784 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:00:27,784 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:00:28,321 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 13:00:28,322 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 13:00:28,323 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 13:00:28,737 DEBUG   SenderThread:101651 [sender.py:send():378] send: stats
+2024-06-07 13:00:30,605 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/output.log
+2024-06-07 13:00:33,769 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:00:38,769 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:00:40,607 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/output.log
+2024-06-07 13:00:43,322 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 13:00:43,322 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 13:00:43,323 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 13:00:44,452 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:00:49,453 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:00:52,610 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/output.log
+2024-06-07 13:00:54,685 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:00:58,322 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 13:00:58,322 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 13:00:58,323 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 13:00:58,738 DEBUG   SenderThread:101651 [sender.py:send():378] send: stats
+2024-06-07 13:00:59,738 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:01:02,612 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/output.log
+2024-06-07 13:01:05,645 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:01:10,645 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:01:13,322 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 13:01:13,322 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 13:01:13,324 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 13:01:14,615 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/output.log
+2024-06-07 13:01:16,434 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:01:21,435 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:01:24,618 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/output.log
+2024-06-07 13:01:26,600 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:01:28,322 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 13:01:28,322 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 13:01:28,324 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 13:01:28,738 DEBUG   SenderThread:101651 [sender.py:send():378] send: stats
+2024-06-07 13:01:31,739 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:01:36,620 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/output.log
+2024-06-07 13:01:37,549 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:01:42,549 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:01:43,322 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 13:01:43,322 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 13:01:43,324 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 13:01:46,623 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/output.log
+2024-06-07 13:01:47,568 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:01:52,569 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:01:58,322 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 13:01:58,322 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 13:01:58,324 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 13:01:58,412 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:01:58,626 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/output.log
+2024-06-07 13:01:58,738 DEBUG   SenderThread:101651 [sender.py:send():378] send: stats
+2024-06-07 13:02:03,739 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:02:08,628 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/output.log
+2024-06-07 13:02:09,624 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:02:13,322 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 13:02:13,322 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 13:02:13,324 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 13:02:15,453 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:02:20,632 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/output.log
+2024-06-07 13:02:20,652 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:02:25,653 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:02:28,322 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 13:02:28,323 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 13:02:28,324 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 13:02:28,739 DEBUG   SenderThread:101651 [sender.py:send():378] send: stats
+2024-06-07 13:02:30,635 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/output.log
+2024-06-07 13:02:30,676 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:02:35,677 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:02:41,675 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:02:42,644 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/output.log
+2024-06-07 13:02:43,322 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 13:02:43,323 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 13:02:43,324 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 13:02:47,464 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:02:52,641 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/output.log
+2024-06-07 13:02:52,732 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:02:57,733 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:02:58,322 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 13:02:58,323 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 13:02:58,324 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 13:02:58,740 DEBUG   SenderThread:101651 [sender.py:send():378] send: stats
+2024-06-07 13:03:02,756 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:03:04,645 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/output.log
+2024-06-07 13:03:07,757 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:03:12,757 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:03:13,324 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 13:03:13,324 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 13:03:13,325 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 13:03:14,647 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/output.log
+2024-06-07 13:03:17,777 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:03:22,777 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:03:26,650 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/output.log
+2024-06-07 13:03:27,784 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:03:28,324 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 13:03:28,324 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 13:03:28,325 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 13:03:28,741 DEBUG   SenderThread:101651 [sender.py:send():378] send: stats
+2024-06-07 13:03:33,742 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:03:36,652 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/output.log
+2024-06-07 13:03:38,841 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:03:43,324 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 13:03:43,325 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 13:03:43,325 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 13:03:44,406 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:03:48,655 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/output.log
+2024-06-07 13:03:49,644 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:03:54,645 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:03:58,324 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 13:03:58,324 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 13:03:58,325 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 13:03:58,658 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/output.log
+2024-06-07 13:03:58,741 DEBUG   SenderThread:101651 [sender.py:send():378] send: stats
+2024-06-07 13:03:59,741 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:04:04,742 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:04:10,564 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:04:10,661 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/output.log
+2024-06-07 13:04:13,324 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 13:04:13,324 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 13:04:13,325 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 13:04:16,464 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:04:20,663 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/output.log
+2024-06-07 13:04:21,524 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:04:26,525 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:04:28,324 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 13:04:28,324 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 13:04:28,326 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 13:04:28,741 DEBUG   SenderThread:101651 [sender.py:send():378] send: stats
+2024-06-07 13:04:32,500 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:04:32,670 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/output.log
+2024-06-07 13:04:37,501 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:04:42,672 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/output.log
+2024-06-07 13:04:43,324 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 13:04:43,324 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 13:04:43,326 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 13:04:43,469 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:04:48,470 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:04:53,470 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:04:58,324 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 13:04:58,324 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 13:04:58,368 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 13:04:58,742 DEBUG   SenderThread:101651 [sender.py:send():378] send: stats
+2024-06-07 13:04:58,742 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:05:03,743 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:05:08,744 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:05:13,324 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 13:05:13,325 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 13:05:13,372 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 13:05:14,482 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:05:19,483 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:05:24,484 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:05:28,324 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 13:05:28,325 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 13:05:28,368 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 13:05:28,742 DEBUG   SenderThread:101651 [sender.py:send():378] send: stats
+2024-06-07 13:05:29,743 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:05:34,744 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:05:39,744 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:05:43,325 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 13:05:43,325 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 13:05:43,368 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 13:05:45,437 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:05:50,438 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:05:55,438 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:05:58,325 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 13:05:58,325 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 13:05:58,368 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 13:05:58,743 DEBUG   SenderThread:101651 [sender.py:send():378] send: stats
+2024-06-07 13:06:00,744 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:06:05,744 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:06:10,745 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:06:13,325 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 13:06:13,325 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 13:06:13,368 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 13:06:16,416 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:06:21,416 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:06:26,417 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:06:28,325 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 13:06:28,325 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 13:06:28,368 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 13:06:28,743 DEBUG   SenderThread:101651 [sender.py:send():378] send: stats
+2024-06-07 13:06:31,744 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:06:36,745 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:06:41,745 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:06:43,325 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 13:06:43,325 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 13:06:43,368 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 13:06:47,443 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:06:52,444 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:06:54,164 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-07 13:06:54,165 DEBUG   SenderThread:101651 [sender.py:send():378] send: history
+2024-06-07 13:06:54,165 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 13:06:54,165 INFO    SenderThread:101651 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-06-07 13:06:54,711 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/wandb-summary.json
+2024-06-07 13:06:54,711 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/output.log
+2024-06-07 13:06:56,712 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/output.log
+2024-06-07 13:06:57,601 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:06:58,325 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 13:06:58,325 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 13:06:58,327 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 13:06:58,744 DEBUG   SenderThread:101651 [sender.py:send():378] send: stats
+2024-06-07 13:07:02,745 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:07:08,588 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:07:08,715 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/output.log
+2024-06-07 13:07:13,325 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 13:07:13,326 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 13:07:13,327 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 13:07:14,445 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:07:18,717 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/output.log
+2024-06-07 13:07:19,540 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:07:24,541 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:07:28,325 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 13:07:28,326 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 13:07:28,327 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 13:07:28,744 DEBUG   SenderThread:101651 [sender.py:send():378] send: stats
+2024-06-07 13:07:29,745 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:07:30,720 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/output.log
+2024-06-07 13:07:34,745 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:07:40,457 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:07:40,723 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/output.log
+2024-06-07 13:07:43,325 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 13:07:43,326 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 13:07:43,327 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 13:07:46,431 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:07:51,452 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:07:52,725 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/output.log
+2024-06-07 13:07:56,453 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:07:58,325 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 13:07:58,326 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 13:07:58,327 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 13:07:58,745 DEBUG   SenderThread:101651 [sender.py:send():378] send: stats
+2024-06-07 13:08:01,461 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:08:02,729 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/output.log
+2024-06-07 13:08:06,505 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:08:11,505 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:08:13,326 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 13:08:13,326 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 13:08:13,327 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 13:08:14,731 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/output.log
+2024-06-07 13:08:17,444 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:08:22,445 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:08:24,733 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/output.log
+2024-06-07 13:08:27,505 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:08:28,326 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 13:08:28,326 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 13:08:28,328 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 13:08:28,745 DEBUG   SenderThread:101651 [sender.py:send():378] send: stats
+2024-06-07 13:08:32,746 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:08:36,736 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/output.log
+2024-06-07 13:08:38,533 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:08:43,326 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 13:08:43,326 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 13:08:43,328 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 13:08:44,488 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:08:47,738 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/output.log
+2024-06-07 13:08:49,557 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:08:54,558 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:08:58,326 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 13:08:58,326 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 13:08:58,327 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 13:08:58,746 DEBUG   SenderThread:101651 [sender.py:send():378] send: stats
+2024-06-07 13:08:59,741 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/output.log
+2024-06-07 13:08:59,746 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:09:04,747 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:09:09,743 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/output.log
+2024-06-07 13:09:10,609 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:09:13,326 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 13:09:13,326 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 13:09:13,328 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 13:09:16,472 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:09:21,632 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:09:21,747 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/output.log
+2024-06-07 13:09:26,633 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:09:28,326 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 13:09:28,326 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 13:09:28,328 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 13:09:28,747 DEBUG   SenderThread:101651 [sender.py:send():378] send: stats
+2024-06-07 13:09:31,656 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:09:31,750 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/output.log
+2024-06-07 13:09:36,657 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:09:42,660 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:09:43,327 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 13:09:43,327 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 13:09:43,328 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 13:09:43,753 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/output.log
+2024-06-07 13:09:48,489 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:09:53,716 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:09:53,755 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/output.log
+2024-06-07 13:09:58,326 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 13:09:58,327 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 13:09:58,328 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 13:09:58,747 DEBUG   SenderThread:101651 [sender.py:send():378] send: stats
+2024-06-07 13:09:58,747 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:10:03,760 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:10:05,759 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/output.log
+2024-06-07 13:10:08,762 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:10:13,326 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 13:10:13,327 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 13:10:13,328 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 13:10:13,764 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:10:15,762 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/output.log
+2024-06-07 13:10:18,809 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:10:23,809 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:10:25,764 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/output.log
+2024-06-07 13:10:28,327 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 13:10:28,327 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 13:10:28,331 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 13:10:28,750 DEBUG   SenderThread:101651 [sender.py:send():378] send: stats
+2024-06-07 13:10:29,750 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:10:34,753 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:10:37,767 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/output.log
+2024-06-07 13:10:40,030 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:10:43,327 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 13:10:43,327 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 13:10:43,328 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 13:10:45,477 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:10:47,769 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/output.log
+2024-06-07 13:10:51,001 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:10:56,001 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:10:58,327 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 13:10:58,327 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 13:10:58,329 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 13:10:58,748 DEBUG   SenderThread:101651 [sender.py:send():378] send: stats
+2024-06-07 13:10:59,772 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/output.log
+2024-06-07 13:11:01,749 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:11:06,749 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:11:09,774 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/output.log
+2024-06-07 13:11:11,925 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:11:13,327 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 13:11:13,327 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 13:11:13,329 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 13:11:17,459 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:11:21,777 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/output.log
+2024-06-07 13:11:22,881 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:11:27,881 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:11:28,327 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 13:11:28,327 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 13:11:28,329 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 13:11:28,749 DEBUG   SenderThread:101651 [sender.py:send():378] send: stats
+2024-06-07 13:11:33,750 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:11:38,750 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:11:43,327 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 13:11:43,327 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 13:11:43,368 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 13:11:44,460 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:11:46,233 DEBUG   SenderThread:101651 [sender.py:send():378] send: exit
+2024-06-07 13:11:46,234 INFO    SenderThread:101651 [sender.py:send_exit():585] handling exit code: 255
+2024-06-07 13:11:46,234 INFO    SenderThread:101651 [sender.py:send_exit():587] handling runtime: 827
+2024-06-07 13:11:46,235 INFO    SenderThread:101651 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-06-07 13:11:46,235 INFO    SenderThread:101651 [sender.py:send_exit():593] send defer
+2024-06-07 13:11:46,235 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: defer
+2024-06-07 13:11:46,235 INFO    HandlerThread:101651 [handler.py:handle_request_defer():172] handle defer: 0
+2024-06-07 13:11:46,236 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: defer
+2024-06-07 13:11:46,236 INFO    SenderThread:101651 [sender.py:send_request_defer():609] handle sender defer: 0
+2024-06-07 13:11:46,236 INFO    SenderThread:101651 [sender.py:transition_state():613] send defer: 1
+2024-06-07 13:11:46,236 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: defer
+2024-06-07 13:11:46,236 INFO    HandlerThread:101651 [handler.py:handle_request_defer():172] handle defer: 1
+2024-06-07 13:11:46,236 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: defer
+2024-06-07 13:11:46,236 INFO    SenderThread:101651 [sender.py:send_request_defer():609] handle sender defer: 1
+2024-06-07 13:11:46,236 INFO    SenderThread:101651 [sender.py:transition_state():613] send defer: 2
+2024-06-07 13:11:46,236 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: defer
+2024-06-07 13:11:46,236 INFO    HandlerThread:101651 [handler.py:handle_request_defer():172] handle defer: 2
+2024-06-07 13:11:46,236 INFO    HandlerThread:101651 [system_monitor.py:finish():203] Stopping system monitor
+2024-06-07 13:11:46,236 DEBUG   SystemMonitor:101651 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-06-07 13:11:46,240 DEBUG   SystemMonitor:101651 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-06-07 13:11:46,240 INFO    HandlerThread:101651 [interfaces.py:finish():202] Joined cpu monitor
+2024-06-07 13:11:46,240 INFO    HandlerThread:101651 [interfaces.py:finish():202] Joined disk monitor
+2024-06-07 13:11:46,276 INFO    HandlerThread:101651 [interfaces.py:finish():202] Joined gpu monitor
+2024-06-07 13:11:46,276 INFO    HandlerThread:101651 [interfaces.py:finish():202] Joined memory monitor
+2024-06-07 13:11:46,276 INFO    HandlerThread:101651 [interfaces.py:finish():202] Joined network monitor
+2024-06-07 13:11:46,276 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: defer
+2024-06-07 13:11:46,276 INFO    SenderThread:101651 [sender.py:send_request_defer():609] handle sender defer: 2
+2024-06-07 13:11:46,276 INFO    SenderThread:101651 [sender.py:transition_state():613] send defer: 3
+2024-06-07 13:11:46,277 DEBUG   SenderThread:101651 [sender.py:send():378] send: stats
+2024-06-07 13:11:46,277 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: defer
+2024-06-07 13:11:46,277 INFO    HandlerThread:101651 [handler.py:handle_request_defer():172] handle defer: 3
+2024-06-07 13:11:46,277 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: defer
+2024-06-07 13:11:46,277 INFO    SenderThread:101651 [sender.py:send_request_defer():609] handle sender defer: 3
+2024-06-07 13:11:46,277 INFO    SenderThread:101651 [sender.py:transition_state():613] send defer: 4
+2024-06-07 13:11:46,278 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: defer
+2024-06-07 13:11:46,278 INFO    HandlerThread:101651 [handler.py:handle_request_defer():172] handle defer: 4
+2024-06-07 13:11:46,279 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: defer
+2024-06-07 13:11:46,279 INFO    SenderThread:101651 [sender.py:send_request_defer():609] handle sender defer: 4
+2024-06-07 13:11:46,279 INFO    SenderThread:101651 [sender.py:transition_state():613] send defer: 5
+2024-06-07 13:11:46,279 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: defer
+2024-06-07 13:11:46,279 INFO    HandlerThread:101651 [handler.py:handle_request_defer():172] handle defer: 5
+2024-06-07 13:11:46,279 DEBUG   SenderThread:101651 [sender.py:send():378] send: summary
+2024-06-07 13:11:46,280 INFO    SenderThread:101651 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-06-07 13:11:46,280 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: defer
+2024-06-07 13:11:46,280 INFO    SenderThread:101651 [sender.py:send_request_defer():609] handle sender defer: 5
+2024-06-07 13:11:46,280 INFO    SenderThread:101651 [sender.py:transition_state():613] send defer: 6
+2024-06-07 13:11:46,280 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: defer
+2024-06-07 13:11:46,280 INFO    HandlerThread:101651 [handler.py:handle_request_defer():172] handle defer: 6
+2024-06-07 13:11:46,280 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: defer
+2024-06-07 13:11:46,280 INFO    SenderThread:101651 [sender.py:send_request_defer():609] handle sender defer: 6
+2024-06-07 13:11:46,280 INFO    SenderThread:101651 [sender.py:transition_state():613] send defer: 7
+2024-06-07 13:11:46,281 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 13:11:46,281 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: defer
+2024-06-07 13:11:46,281 INFO    HandlerThread:101651 [handler.py:handle_request_defer():172] handle defer: 7
+2024-06-07 13:11:46,281 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: defer
+2024-06-07 13:11:46,281 INFO    SenderThread:101651 [sender.py:send_request_defer():609] handle sender defer: 7
+2024-06-07 13:11:46,784 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/wandb-summary.json
+2024-06-07 13:11:47,233 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: poll_exit
+2024-06-07 13:11:48,194 INFO    SenderThread:101651 [sender.py:transition_state():613] send defer: 8
+2024-06-07 13:11:48,194 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: poll_exit
+2024-06-07 13:11:48,194 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: defer
+2024-06-07 13:11:48,194 INFO    HandlerThread:101651 [handler.py:handle_request_defer():172] handle defer: 8
+2024-06-07 13:11:48,194 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: defer
+2024-06-07 13:11:48,195 INFO    SenderThread:101651 [sender.py:send_request_defer():609] handle sender defer: 8
+2024-06-07 13:11:48,195 INFO    SenderThread:101651 [job_builder.py:build():298] Attempting to build job artifact
+2024-06-07 13:11:48,195 INFO    SenderThread:101651 [job_builder.py:_get_source_type():428] is repo sourced job
+2024-06-07 13:11:48,222 INFO    SenderThread:101651 [job_builder.py:build():404] adding wandb-job metadata file
+2024-06-07 13:11:48,232 INFO    SenderThread:101651 [sender.py:transition_state():613] send defer: 9
+2024-06-07 13:11:48,232 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: defer
+2024-06-07 13:11:48,232 INFO    HandlerThread:101651 [handler.py:handle_request_defer():172] handle defer: 9
+2024-06-07 13:11:48,232 DEBUG   SenderThread:101651 [sender.py:send():378] send: artifact
+2024-06-07 13:11:48,234 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: poll_exit
+2024-06-07 13:11:48,667 INFO    wandb-upload_0:101651 [upload_job.py:push():86] Skipped uploading /home/brett/.local/share/wandb/artifacts/staging/tmpn3zwlx4j
+2024-06-07 13:11:48,785 INFO    Thread-12 :101651 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/output.log
+2024-06-07 13:11:48,931 INFO    wandb-upload_1:101651 [upload_job.py:push():89] Uploaded file /home/brett/.local/share/wandb/artifacts/staging/tmpmrfjggps
+2024-06-07 13:11:49,603 INFO    SenderThread:101651 [sender.py:send_artifact():1443] sent artifact job-https___github.com_karpathy_nanoGPT.git_train.py - {'id': 'QXJ0aWZhY3Q6ODYzOTc0MDg0', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEwNzAzMjQzMw==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6ODYzOTYxNzcz', 'versionIndex': 4}}}
+2024-06-07 13:11:49,604 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: defer
+2024-06-07 13:11:49,604 INFO    SenderThread:101651 [sender.py:send_request_defer():609] handle sender defer: 9
+2024-06-07 13:11:49,604 INFO    SenderThread:101651 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-06-07 13:11:49,787 INFO    SenderThread:101651 [dir_watcher.py:finish():388] scan: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files
+2024-06-07 13:11:49,787 INFO    SenderThread:101651 [dir_watcher.py:finish():402] scan save: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/config.yaml config.yaml
+2024-06-07 13:11:49,788 INFO    SenderThread:101651 [dir_watcher.py:finish():402] scan save: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/wandb-metadata.json wandb-metadata.json
+2024-06-07 13:11:49,788 INFO    SenderThread:101651 [dir_watcher.py:finish():402] scan save: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/requirements.txt requirements.txt
+2024-06-07 13:11:49,794 INFO    SenderThread:101651 [dir_watcher.py:finish():402] scan save: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/conda-environment.yaml conda-environment.yaml
+2024-06-07 13:11:49,798 INFO    SenderThread:101651 [dir_watcher.py:finish():402] scan save: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/wandb-summary.json wandb-summary.json
+2024-06-07 13:11:49,799 INFO    SenderThread:101651 [dir_watcher.py:finish():402] scan save: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/output.log output.log
+2024-06-07 13:11:49,805 INFO    SenderThread:101651 [sender.py:transition_state():613] send defer: 10
+2024-06-07 13:11:49,808 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: poll_exit
+2024-06-07 13:11:49,808 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: defer
+2024-06-07 13:11:49,808 INFO    HandlerThread:101651 [handler.py:handle_request_defer():172] handle defer: 10
+2024-06-07 13:11:49,808 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: defer
+2024-06-07 13:11:49,809 INFO    SenderThread:101651 [sender.py:send_request_defer():609] handle sender defer: 10
+2024-06-07 13:11:49,809 INFO    SenderThread:101651 [file_pusher.py:finish():172] shutting down file pusher
+2024-06-07 13:11:50,000 INFO    wandb-upload_0:101651 [upload_job.py:push():131] Uploaded file /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/config.yaml
+2024-06-07 13:11:50,130 INFO    wandb-upload_3:101651 [upload_job.py:push():131] Uploaded file /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/wandb-summary.json
+2024-06-07 13:11:50,134 INFO    wandb-upload_2:101651 [upload_job.py:push():131] Uploaded file /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/conda-environment.yaml
+2024-06-07 13:11:50,136 INFO    wandb-upload_1:101651 [upload_job.py:push():131] Uploaded file /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/requirements.txt
+2024-06-07 13:11:50,186 INFO    wandb-upload_4:101651 [upload_job.py:push():131] Uploaded file /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/files/output.log
+2024-06-07 13:11:50,236 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: poll_exit
+2024-06-07 13:11:50,237 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: poll_exit
+2024-06-07 13:11:50,387 INFO    Thread-11 (_thread_body):101651 [sender.py:transition_state():613] send defer: 11
+2024-06-07 13:11:50,387 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: defer
+2024-06-07 13:11:50,388 INFO    HandlerThread:101651 [handler.py:handle_request_defer():172] handle defer: 11
+2024-06-07 13:11:50,389 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: defer
+2024-06-07 13:11:50,389 INFO    SenderThread:101651 [sender.py:send_request_defer():609] handle sender defer: 11
+2024-06-07 13:11:50,389 INFO    SenderThread:101651 [file_pusher.py:join():178] waiting for file pusher
+2024-06-07 13:11:50,390 INFO    SenderThread:101651 [sender.py:transition_state():613] send defer: 12
+2024-06-07 13:11:50,390 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: defer
+2024-06-07 13:11:50,390 INFO    HandlerThread:101651 [handler.py:handle_request_defer():172] handle defer: 12
+2024-06-07 13:11:50,391 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: defer
+2024-06-07 13:11:50,391 INFO    SenderThread:101651 [sender.py:send_request_defer():609] handle sender defer: 12
+2024-06-07 13:11:50,392 INFO    SenderThread:101651 [file_stream.py:finish():595] file stream finish called
+2024-06-07 13:11:50,598 INFO    SenderThread:101651 [file_stream.py:finish():599] file stream finish is done
+2024-06-07 13:11:50,598 INFO    SenderThread:101651 [sender.py:transition_state():613] send defer: 13
+2024-06-07 13:11:50,599 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: defer
+2024-06-07 13:11:50,599 INFO    HandlerThread:101651 [handler.py:handle_request_defer():172] handle defer: 13
+2024-06-07 13:11:50,600 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: defer
+2024-06-07 13:11:50,600 INFO    SenderThread:101651 [sender.py:send_request_defer():609] handle sender defer: 13
+2024-06-07 13:11:50,600 INFO    SenderThread:101651 [sender.py:transition_state():613] send defer: 14
+2024-06-07 13:11:50,601 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: defer
+2024-06-07 13:11:50,601 INFO    HandlerThread:101651 [handler.py:handle_request_defer():172] handle defer: 14
+2024-06-07 13:11:50,602 DEBUG   SenderThread:101651 [sender.py:send():378] send: final
+2024-06-07 13:11:50,603 DEBUG   SenderThread:101651 [sender.py:send():378] send: footer
+2024-06-07 13:11:50,603 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: defer
+2024-06-07 13:11:50,603 INFO    SenderThread:101651 [sender.py:send_request_defer():609] handle sender defer: 14
+2024-06-07 13:11:50,604 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: poll_exit
+2024-06-07 13:11:50,605 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: poll_exit
+2024-06-07 13:11:50,607 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: poll_exit
+2024-06-07 13:11:50,608 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: poll_exit
+2024-06-07 13:11:50,609 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: server_info
+2024-06-07 13:11:50,610 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: server_info
+2024-06-07 13:11:50,615 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: get_summary
+2024-06-07 13:11:50,616 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: sampled_history
+2024-06-07 13:11:50,616 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 13:11:50,617 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: job_info
+2024-06-07 13:11:50,662 DEBUG   SenderThread:101651 [sender.py:send_request():405] send_request: job_info
+2024-06-07 13:11:50,663 INFO    MainThread:101651 [wandb_run.py:_footer_history_summary_info():3851] rendering history
+2024-06-07 13:11:50,664 INFO    MainThread:101651 [wandb_run.py:_footer_history_summary_info():3883] rendering summary
+2024-06-07 13:11:50,664 INFO    MainThread:101651 [wandb_run.py:_footer_sync_info():3810] logging synced files
+2024-06-07 13:11:50,665 DEBUG   HandlerThread:101651 [handler.py:handle_request():146] handle_request: shutdown
+2024-06-07 13:11:50,665 INFO    HandlerThread:101651 [handler.py:finish():869] shutting down handler
+2024-06-07 13:11:51,617 INFO    WriterThread:101651 [datastore.py:close():296] close: /home/brett/Desktop/tutorials/grokking/nanoGPT/wandb/run-20240607_125758-3jo179ir/run-3jo179ir.wandb
+2024-06-07 13:11:51,663 INFO    SenderThread:101651 [sender.py:finish():1521] shutting down sender
+2024-06-07 13:11:51,663 INFO    SenderThread:101651 [file_pusher.py:finish():172] shutting down file pusher
+2024-06-07 13:11:51,663 INFO    SenderThread:101651 [file_pusher.py:join():178] waiting for file pusher

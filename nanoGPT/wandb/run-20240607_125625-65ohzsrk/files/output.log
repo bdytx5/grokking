@@ -1,0 +1,72 @@
+step 0: train loss 4.2874, val loss 4.2823
+iter 0: loss 4.2706, time 58919.85ms, mfu -100.00%
+iter 10: loss 3.2437, time 518.60ms, mfu 0.72%
+iter 20: loss 2.7833, time 511.39ms, mfu 0.72%
+iter 30: loss 2.6281, time 511.28ms, mfu 0.72%
+iter 40: loss 2.5736, time 511.42ms, mfu 0.72%
+iter 50: loss 2.5272, time 510.55ms, mfu 0.72%
+iter 60: loss 2.5141, time 512.47ms, mfu 0.72%
+iter 70: loss 2.4924, time 512.24ms, mfu 0.72%
+iter 80: loss 2.5002, time 1106.10ms, mfu 0.68%
+iter 90: loss 2.4722, time 1108.92ms, mfu 0.65%
+iter 100: loss 2.4627, time 1104.47ms, mfu 0.62%
+iter 110: loss 2.4543, time 1106.38ms, mfu 0.59%
+iter 120: loss 2.4270, time 1110.20ms, mfu 0.56%
+iter 130: loss 2.4127, time 1103.99ms, mfu 0.54%
+iter 140: loss 2.4060, time 1106.71ms, mfu 0.52%
+iter 150: loss 2.4182, time 1106.63ms, mfu 0.50%
+iter 160: loss 2.3749, time 1103.91ms, mfu 0.49%
+iter 170: loss 2.3549, time 1105.06ms, mfu 0.47%
+iter 180: loss 2.3204, time 1103.27ms, mfu 0.46%
+iter 190: loss 2.2538, time 1101.65ms, mfu 0.45%
+iter 200: loss 2.2032, time 1100.75ms, mfu 0.44%
+iter 210: loss 2.1456, time 1099.39ms, mfu 0.43%
+iter 220: loss 2.1430, time 1097.42ms, mfu 0.42%
+iter 230: loss 2.0644, time 1100.88ms, mfu 0.41%
+iter 240: loss 2.0740, time 1103.60ms, mfu 0.40%
+step 250: train loss 1.9642, val loss 2.0591
+saving checkpoint to out-shakespeare-char
+iter 250: loss 2.0340, time 126751.16ms, mfu 0.36%
+iter 260: loss 1.9798, time 1099.46ms, mfu 0.36%
+iter 270: loss 1.9771, time 1104.20ms, mfu 0.36%
+iter 280: loss 1.9695, time 1101.97ms, mfu 0.36%
+iter 290: loss 1.9165, time 1100.08ms, mfu 0.35%
+iter 300: loss 1.9012, time 1102.95ms, mfu 0.35%
+iter 310: loss 1.8684, time 1098.98ms, mfu 0.35%
+iter 320: loss 1.8522, time 1093.57ms, mfu 0.35%
+iter 330: loss 1.8276, time 1102.94ms, mfu 0.35%
+iter 340: loss 1.7918, time 1106.30ms, mfu 0.35%
+iter 350: loss 1.8305, time 1102.82ms, mfu 0.35%
+iter 360: loss 1.7719, time 1102.24ms, mfu 0.35%
+iter 370: loss 1.7438, time 1100.39ms, mfu 0.35%
+iter 380: loss 1.7266, time 1105.16ms, mfu 0.34%
+iter 390: loss 1.7340, time 1101.58ms, mfu 0.34%
+iter 400: loss 1.7637, time 1106.41ms, mfu 0.34%
+iter 410: loss 1.6968, time 1102.92ms, mfu 0.34%
+iter 420: loss 1.7138, time 1102.33ms, mfu 0.34%
+iter 430: loss 1.6926, time 1105.76ms, mfu 0.34%
+iter 440: loss 1.6538, time 1100.87ms, mfu 0.34%
+iter 450: loss 1.6594, time 1100.75ms, mfu 0.34%
+iter 460: loss 1.5965, time 1101.79ms, mfu 0.34%
+iter 470: loss 1.6535, time 1101.75ms, mfu 0.34%
+iter 480: loss 1.6270, time 1102.58ms, mfu 0.34%
+iter 490: loss 1.6075, time 1106.77ms, mfu 0.34%
+step 500: train loss 1.5233, val loss 1.7234
+saving checkpoint to out-shakespeare-char
+iter 500: loss 1.5947, time 127202.69ms, mfu 0.31%
+iter 510: loss 1.6055, time 1100.28ms, mfu 0.31%
+iter 520: loss 1.5948, time 1102.95ms, mfu 0.31%
+iter 530: loss 1.5668, time 1095.93ms, mfu 0.32%
+iter 540: loss 1.6175, time 1101.15ms, mfu 0.32%
+iter 550: loss 1.5689, time 1101.38ms, mfu 0.32%
+iter 560: loss 1.5682, time 1100.08ms, mfu 0.32%
+iter 570: loss 1.5701, time 1104.73ms, mfu 0.32%
+iter 580: loss 1.5275, time 1104.01ms, mfu 0.32%
+Traceback (most recent call last):
+  File "/home/brett/Desktop/tutorials/grokking/nanoGPT/train.py", line 332, in <module>
+    scaler.scale(loss).backward()
+  File "/home/brett/anaconda3/envs/py310/lib/python3.10/site-packages/torch/_tensor.py", line 522, in backward
+    torch.autograd.backward(
+  File "/home/brett/anaconda3/envs/py310/lib/python3.10/site-packages/torch/autograd/__init__.py", line 266, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

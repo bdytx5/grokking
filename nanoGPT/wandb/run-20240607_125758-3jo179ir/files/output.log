@@ -1,0 +1,61 @@
+step 0: train loss 4.2874, val loss 4.2823
+iter 0: loss 4.2706, time 124453.93ms, mfu -100.00%
+iter 10: loss 3.4043, time 1093.99ms, mfu 0.34%
+iter 20: loss 3.2944, time 1105.83ms, mfu 0.34%
+iter 30: loss 3.2096, time 1095.63ms, mfu 0.34%
+iter 40: loss 3.1021, time 1093.73ms, mfu 0.34%
+iter 50: loss 3.0389, time 1092.49ms, mfu 0.34%
+iter 60: loss 2.8892, time 1099.53ms, mfu 0.34%
+iter 70: loss 2.8190, time 1095.04ms, mfu 0.34%
+iter 80: loss 2.7783, time 1110.88ms, mfu 0.34%
+iter 90: loss 2.7335, time 1103.72ms, mfu 0.34%
+iter 100: loss 2.7329, time 1100.92ms, mfu 0.34%
+iter 110: loss 2.7362, time 1107.51ms, mfu 0.34%
+iter 120: loss 2.7060, time 1104.92ms, mfu 0.34%
+iter 130: loss 2.6946, time 1104.69ms, mfu 0.34%
+iter 140: loss 2.7036, time 1104.69ms, mfu 0.34%
+iter 150: loss 2.7128, time 1105.44ms, mfu 0.34%
+iter 160: loss 2.7073, time 1108.30ms, mfu 0.34%
+iter 170: loss 2.6737, time 1105.23ms, mfu 0.34%
+iter 180: loss 2.6997, time 1104.72ms, mfu 0.34%
+iter 190: loss 2.6862, time 1099.02ms, mfu 0.34%
+iter 200: loss 2.6730, time 1095.54ms, mfu 0.34%
+iter 210: loss 2.6488, time 1099.20ms, mfu 0.34%
+iter 220: loss 2.6834, time 1097.95ms, mfu 0.34%
+iter 230: loss 2.6946, time 1096.02ms, mfu 0.34%
+iter 240: loss 2.6937, time 1098.78ms, mfu 0.34%
+step 250: train loss 2.5748, val loss 2.5681
+saving checkpoint to out-shakespeare-char
+iter 250: loss 2.6588, time 125199.49ms, mfu 0.31%
+iter 260: loss 2.6846, time 1098.58ms, mfu 0.31%
+iter 270: loss 2.6708, time 1089.90ms, mfu 0.31%
+iter 280: loss 2.7101, time 1104.77ms, mfu 0.31%
+iter 290: loss 2.6699, time 1099.21ms, mfu 0.32%
+iter 300: loss 2.6669, time 1090.35ms, mfu 0.32%
+iter 310: loss 2.6731, time 1105.91ms, mfu 0.32%
+iter 320: loss 2.6806, time 1093.25ms, mfu 0.32%
+iter 330: loss 2.6623, time 1101.48ms, mfu 0.32%
+iter 340: loss 2.6618, time 1108.10ms, mfu 0.33%
+iter 350: loss 2.6582, time 1107.37ms, mfu 0.33%
+iter 360: loss 2.6696, time 1100.44ms, mfu 0.33%
+iter 370: loss 2.6780, time 1101.25ms, mfu 0.33%
+iter 380: loss 2.6539, time 1108.14ms, mfu 0.33%
+iter 390: loss 2.6695, time 1104.78ms, mfu 0.33%
+iter 400: loss 2.6621, time 1103.41ms, mfu 0.33%
+iter 410: loss 2.6675, time 1097.89ms, mfu 0.33%
+iter 420: loss 2.6648, time 1104.16ms, mfu 0.33%
+iter 430: loss 2.6815, time 1107.99ms, mfu 0.33%
+iter 440: loss 2.6633, time 1095.71ms, mfu 0.33%
+iter 450: loss 2.6588, time 1103.03ms, mfu 0.33%
+iter 460: loss 2.6619, time 1095.86ms, mfu 0.33%
+iter 470: loss 2.6622, time 1096.96ms, mfu 0.34%
+iter 480: loss 2.6540, time 1094.62ms, mfu 0.34%
+iter 490: loss 2.6596, time 1099.00ms, mfu 0.34%
+Traceback (most recent call last):
+  File "/home/brett/Desktop/tutorials/grokking/nanoGPT/train.py", line 291, in <module>
+    losses = estimate_loss()
+  File "/home/brett/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/brett/Desktop/tutorials/grokking/nanoGPT/train.py", line 250, in estimate_loss
+    losses[k] = loss.item()
+KeyboardInterrupt
